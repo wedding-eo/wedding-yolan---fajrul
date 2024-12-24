@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Allura&family=Carattere&family=Forum&family=Kaushan+Script&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
+
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+{
+  font-family: "forum", serif;
+}
+body {
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  min-height: 4000px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/foto1.jpg);
+  background-size: auto;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(20%);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "Allura", serif;
+  font-size: 5rem;
+  margin-top: 150px;
+
+}
+
+.hero h4 {
+  font-family: "forum", serif;
+  font-size: 1.6rem;
+  margin-top: 100px;
+}
+
+.hero p {
+  font-family: "Forum", serif;
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: #871111;
+  background-color: #d79b34;
+  box-shadow: var(--shadow);
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: "forum", serif;
+}
+
+.hero a:hover {
+  background-color: #871111;
+  color: #d79b34;
+}
+
+.mynavbar{
+  top: 90vh;
+}
+
+.mynavbar .container{
+  width: 75%;
+  color: #d79b34;
+  background-color: #d79b34;
+  border: 1px solid transparent;
+  border-radius: 40px;
+}
+
+.mynavbar a{
+  padding: 10px;
+}
+
+.navbar-brand i{
+  color: #871111;
+  cursor: pointer;
+}
+
+.navbar-brand i:hover{
+  color: white;
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+  color: #d79b34;
+}
+
+.home {
+  background-image: url(img/bg1.png);
+  background-size: cover;
+  min-height: 130vh;
+  margin-top: -6.7rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home h2,.home h4,.home p
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+  color: white;
+  font-family: "forum", serif;
+  font-size: 1.5rem;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  background-image: url(img/bga2.png);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.isi {
+  background-image: url(img/bga3.png);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.isi .alamat {
+  font-size: 1.1rem;
+}
+
+.isi .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.isi .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.isi .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.isi .card-body {
+  font-size: 1rem;
+}
+
+.isi .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: #d78b34;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  bottom: 50vh;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+/* Extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .home img{
+    margin-top: -70px;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 590px) {
+  html {
+    font-size: 60%;
+  }
+
+    .mynavbar .nav-link {
+    color: black;
+  }
+
+  .hero{
+    height: 100vh;
+  }
+
+  .home{
+    min-height: 100vh;
+    margin-left: -5px;
+    background-image: url(img/bgg.png);
+    background-size: cover;
+  }
+
+  .home .balut{
+    padding-left: 20px;
+  }
+
+  .home .balut #bingkai{
+    padding-left: 20px;
+  }
+
+  .home h1{
+    font-size: 30px;
+  }
+
+  .home h2{
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+
+  .home .bgg{
+    height: -100px;
+  }
+
+  .home img{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .info{
+    margin-top: -50px;
+    min-height: auto;
+    background-size: cover;
+    margin-left: -5px;
+  }
+
+  .info h3{
+    text-align: center;
+    font-size: 17px;
+    width: 85%;
+    font-family: 'forum', sans-serif;
+  }
+
+  .info h2{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .isi{
+    background-image: url(img/bgg.png);    
+    background-size: cover;
+    min-height: 85vh;
+    font-family: 'forum', sans-serif;
+    margin-left: -5px;
+  }
+
+  .isi .atas{
+    margin-top: -100px;
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  .isi .atas img{
+    width: 104.2%;
+
+  }
+  .isi .biss{
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .isi,.hor,.pria,.nama{
+    display: flex;
+    justify-content: center;
+  }
+  .isi .biss img{
+    width: 30%;
+    margin-top: 20px;
+  }
+
+  .hor h2{
+    color: #d79b34;
+    margin-top: 25px;
+    font-weight: 600;
+  }
+
+  .isi .kata1{
+    margin-top: 10px;
+    width: 75%;
+    text-align: justify;
+  }
+
+  .isi2 .pria img{
+    margin-top: 30px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 40px;
+  }
+
+  .isi .nama h2{
+    font-family: 'allura', serif;
+    font-size: 25px;
+    margin-top: 30px;
+    color: #d79b34;
+    font-weight: 500;
+  }
+  
+  .isi .ortu{
+    margin-top: 10px;
+  }
+
+  .isi .ortu h4{
+    text-align: center;
+  }
+
+  .isi2{
+    background-image: url(img/bgg.png);
+    background-size: cover;
+    font-family: 'forum', sans-serif;
+    min-height: 65vh;
+    color: white;
+    margin-top: -60px;
+    margin-left: -5px;
+  }
+  .isi2 .dan{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .isi2 .dan img{
+    width: 60%;
+  }
+
+  .isi .wanita{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+    .isi .wanita img{
+    margin-top: 20px;
+    width: 55%;
+    border: 1px solid black;
+    border-radius: 40px;
+  }
+
+  .isi2 .nama h2{
+    font-family: 'allura', serif;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #d79b34;
+    font-weight: 500;
+  }
+  
+  .isi2 .ortu{
+    margin-top: 20px;
+  }
+
+  .isi2 .ortu h4{
+    text-align: center;
+  }
+
+  .isi2 img{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .akad{
+    background-image: url(img/bga4.png);
+    background-size: cover;
+    font-family: 'forum', sans-serif;
+    min-height: 65vhh;
+    color: white;
+  }
+
+  .akad img{
+    width: 100%;
+  }
+
+  .tif{
+    margin-top: 30px;
+    color:#d79b34 ;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tif h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .kata1{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .kata1 h4{
+    text-align: justify;
+  }
+
+  .kata2{
+    color:#d79b34 ;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+ 
+  .kata2 h1{
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .waktu1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .waktu1 h4{
+    font-size: 15px;
+  }
+
+  .lok{
+    color:#d79b34 ;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .lok h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .lok1{
+    text-align: center;
+  }
+
+  .map1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .map1 a {
+    color: #871111;
+    background-color: #d79b34;
+    box-shadow: var(--shadow);
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: "forum", serif;
+  }
+
+  .map1 a:hover {
+    background-color: #871111;
+    color: #d79b34;
+  }
+
+
+  .pesta{
+    background-image: url(img/bga4.png);
+    background-size: cover;
+    font-family: 'forum', sans-serif;
+    min-height: 60vh;
+    color: white;
+    margin-top: -10px;
+  }
+
+  .pesta .pernak{
+    display: flex;
+    justify-content: center;
+  }
+
+  .pesta .pernak img{
+    width: 15%;
+    filter: brightness(50%);
+  }
+
+ .kata3{
+    color:#d79b34 ;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+ 
+  .kata3 h1{
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .pesta img{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .foto{
+    background-image: url(img/bgg.png);
+    background-size: cover;
+    font-family: 'forum', sans-serif;
+    min-height: 70vh;
+    color: white;
+  }
+
+  .tif{
+    margin-top: 30px;
+    color:#d79b34 ;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tif h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .kata1{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .kata1 h4{
+    text-align: justify;
+  }
+
+  .thank{
+    background-image: url(img/bga4.png);
+    background-size: cover;
+    font-family: 'forum', sans-serif;
+    min-height: 77vh;
+    color: white;
+    margin-top: -30px;
+  }
+
+  .thank .atas{
+   
+  }
+
+  .thank .atas img{
+    width: 100%;
+  }
+
+ .kata3{
+    color:#d79b34 ;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+ 
+  .kata3 h1{
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .katakata{
+    width: 70%;
+  }
+
+  .katakata h4{
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .kita{
+    color:#d79b34 ;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .thank .lok h2{
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .kita h2{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .thank img{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .mem1{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .mem2{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .mem1 h4,.mem2 h4{
+    font-size: 16px;
+  }
+
+  .tm{
+    text-align: center;
+    margin-top: 25px;
+    color:#d79b34 ;
+    margin-bottom: 15px;
+  }
+  
+  .tm h2{
+    font-size: 20px;
+    font-weight: 400;
+  } 
+   
+  .fam{
+    text-align: center;
+  }
+
+  .fam h2{
+    font-family: 'Allura', serif;
+    font-size: 30px;
+
+  }
