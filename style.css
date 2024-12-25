@@ -22,11 +22,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/foto1.jpg);
-  background-size: auto;
+  background-image: url(img/foto2.jpg);
+  background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: brightness(20%);
+  filter: brightness(50%);
 }
 
 .hero {
@@ -43,14 +43,14 @@ body {
 .hero h1 {
   font-family: "Allura", serif;
   font-size: 5rem;
-  margin-top: 150px;
+  margin-top: 100px;
 
 }
 
 .hero h4 {
   font-family: "forum", serif;
   font-size: 1.6rem;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .hero p {
@@ -448,11 +448,10 @@ body {
     text-align: justify;
   }
 
-  .isi2 .pria img{
+  .isi .pria img{
     margin-top: 30px;
     width: 50%;
     border: 1px solid black;
-    border-radius: 40px;
   }
 
   .isi .nama h2{
@@ -483,24 +482,23 @@ body {
   .isi2 .dan{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 15px;
   }
   .isi2 .dan img{
     width: 60%;
   }
 
-  .isi .wanita{
+  .isi2 .wanita{
     display: flex;
     justify-content: center;
     margin-top: 30px;
   }
 
-    .isi .wanita img{
+    .isi2 .wanita img{
     margin-top: 20px;
     width: 55%;
     border: 1px solid black;
-    border-radius: 40px;
   }
 
   .isi2 .nama h2{
@@ -544,12 +542,12 @@ body {
   }
 
   .tif h2{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
   }
 
   .kata1{
-    width: 80%;
+    width: 75%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -557,6 +555,7 @@ body {
 
   .kata1 h4{
     text-align: justify;
+    font-size: 15px;
   }
 
   .kata2{
