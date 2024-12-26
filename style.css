@@ -31,7 +31,7 @@ body {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 102vh;
 }
 
 .hero h1,
@@ -652,11 +652,11 @@ body {
     width: 100%;
   }
 
-  .foto{
-    background-image: url(img/bgg.png);
+  .gift{
+    background-image: url(img/bga2.png);
     background-size: cover;
     font-family: 'forum', sans-serif;
-    min-height: 70vh;
+    height: auto;
     color: white;
   }
 
@@ -667,38 +667,127 @@ body {
     margin-bottom: 20px;
   }
 
-  .tif h2{
-    font-size: 20px;
-    font-weight: 500;
+  .gift .tif h2{
+    font-size: 25px;
+    font-weight: 700;
   }
 
-  .kata1{
-    width: 80%;
+  .gift .kata1{
+    width: 76%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
-
-  .kata1 h4{
-    text-align: justify;
-  }
+    
+   .bsi{
+        display: flex;
+        justify-content: center;
+       
+    }
+   
+  .bsi img{
+      position: relative;
+        width: 85%;
+    z-index: 1;
+    }
+    
+    .salin1{
+        text-align: center;
+        margin-top: 165px;
+        position: absolute;
+        z-index: 2;
+        border: 3px solid black;
+        width: 60%;
+        padding: 3px;
+        border-radius: 30px;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+    #myInput{
+        display: none;
+    }
+    
+    .copy{
+        padding: 3px;
+        width: 200px;
+        border-radius: 40px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        font-weight: 800;
+    }
+    
+    .aceh{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+   
+  .aceh img{
+      position: relative;
+        width: 85%;
+    z-index: 1;
+    }
+    
+    .salin2{
+        text-align: center;
+        margin-top: 164px;
+        position: absolute;
+        z-index: 2;
+        border: 3px solid black;
+        width: 60%;
+        padding: 3px;
+        border-radius: 30px;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+    #inputQ{
+        position: absolute;
+        z-index: -1;
+        margin-left: 20px;
+        margin-top: 2px;
+    }
+    
+    .copy2{
+       padding: 3px;
+        width: 200px;
+        border-radius: 40px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    
+        .kado{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+   
+  .kado img{
+      position: relative;
+        width: 85%;
+    z-index: 1;
+      margin-bottom: 40px;
+    }
 
   .thank{
     background-image: url(img/bga4.png);
     background-size: cover;
     font-family: 'forum', sans-serif;
-    min-height: 77vh;
+    height:auto;
     color: white;
-    margin-top: -30px;
-  }
-
-  .thank .atas{
-   
   }
 
   .thank .atas img{
     width: 100%;
-  }
+    margin-top: 0px;
+}
 
  .kata3{
     color:#d79b34 ;
